@@ -1,0 +1,178 @@
+.container_home {
+  background: linear-gradient(#fff3b3, #fffbcc);
+  padding: 20px;
+  box-sizing: border-box;
+  
+}
+
+.headerContainerLeft {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.menu-icon {
+  
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: black;
+}
+
+.logo {
+  
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  background-color: transparent;
+  color: goldenrod;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logo:hover {
+  background-color: white;
+  color: black;
+}
+
+.arreglo {
+  display: flex;
+  margin-left: 30px;
+  justify-content: center;
+  
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2a2a2a;
+}
+
+.search {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.containerFilters {
+  display: flex;
+  gap: 10px;
+  
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+
+select {
+  background-color: white;
+  
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.containertarjetas {
+  width: calc(25% - 20px);
+  margin: 10px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  box-sizing: border-box;
+  animation: scale-in 2.5s ease;
+}
+
+@keyframes scale-in {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .containertarjetas {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .headerContainerLeft {
+    margin-left: 20px;
+  }
+  
+  .containertarjetas {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .containertarjetas {
+    width: calc(100% - 20px);
+  }
+
+  .headerContainerLeft {
+    justify-content: space-between;
+  }
+  
+  .menu-icon {
+    display: block;
+  }
+  
+  .containerFilters {
+    display: none;
+  }
+  
+  .select-container.active {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .menu-container {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .menu-container.active {
+    display: flex;
+  }
+  
+  .menu-item {
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+  }
+}
+.loading-image {
+  
+  width: 30%;
+  height: 80%;
+  border-radius: 50%;
+}

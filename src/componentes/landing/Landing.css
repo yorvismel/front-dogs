@@ -1,0 +1,164 @@
+/* Landing.css */
+
+/* Estilos generales */
+.landing-page {
+  background: linear-gradient(#e0f2f1, #f1f8fe);
+  padding: 20px;
+}
+
+/* Sección del héroe */
+.hero-section {
+  padding: 50px;
+  background-image: url('./puppy-ge3b00f9a5_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+.landing-title {
+  font-size: 60px;
+  color: #333333;
+  margin-bottom: 10px;
+  animation: fade-in 1s ease;
+}
+
+.landing-subtitle {
+  font-size: 25px;
+  font-weight: bold;
+  color: #b56c1e;
+  margin-bottom: 15px;
+  animation: fade-in 1s ease;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* Sección de contenido */
+.content-section {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  margin-top: 50px;
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 10px;
+  animation: slide-in 5s ease;
+}
+.botonlanding {
+  display: inline-block;
+  text-decoration: none;
+  background-color: rgb(255, 209, 102);
+  font-weight: bold;
+  color: #0f0e0e;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botonlanding:hover {
+  background-color: rgb(163, 205, 108);
+  transform: scale(1.2);
+}
+
+
+.section-description {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 20px;
+  animation: slide-in 5s ease;
+}
+
+.imagenes {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.imagenes:hover {
+  transform: scale(1.2);
+}
+
+
+
+/* Pie de página */
+.footer {
+  padding: 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: black;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  /* Estilos para dispositivos con un ancho máximo de 768px */
+  .hero-section {
+    padding: 30px;
+  }
+  
+  .landing-title {
+    font-size: 24px;
+  }
+  
+  .landing-subtitle {
+    font-size: 16px;
+  }
+  
+  .section-title {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  
+  .section-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Estilos para dispositivos con un ancho máximo de 576px */
+  .hero-section {
+    padding: 20px;
+  }
+  
+  .landing-title {
+    font-size: 20px;
+  }
+  
+  .landing-subtitle {
+    font-size: 14px;
+  }
+  
+  .section-title {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .section-description {
+    font-size: 12px;
+  }
+}
