@@ -12,7 +12,8 @@ import {
   CLEAR_DETAIL,
 } from "./actions.types";
 
-const url = "http://localhost:3001";
+// const url = "http://localhost:3001";
+const url = "https://backdogs-8cbx.onrender.com"
 
 export function getAllDogs() {
   return async function (dispatch) {
